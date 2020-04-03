@@ -1,8 +1,36 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Mik(eye)el`,
+    description: `A Multidisciplinary Creative`,
     author: `@gatsbyjs`,
+    menuLinks:[
+      {
+        name:'film',
+        link:'/film'
+      },
+      {
+        name:'photography',
+        link:'/photography'
+      },
+      {
+        name:'about',
+        link:'/about'
+      },
+      {
+        name:'contact',
+        link:'/contact'
+      }
+    ],
+    socialLinks:[
+      {
+        name:'instagram',
+        link:'https://www.instagram.com/mikaels_album/'
+      },
+      {
+        name:'vimeo',
+        link:'https://www.instagram.com/mikaels_album/'
+      }
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
