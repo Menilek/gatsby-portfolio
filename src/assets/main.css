@@ -1,4 +1,13 @@
+@font-face {
+  font-family: 'Baskerville Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Baskerville Regular'), url('baskervi.woff') format('woff'),
+  url('baskervi.ttf') format('truetype');
+}
+
 body {
+  font-family: 'Baskerville Regular' !important;
   background: #000 !important;
   color: #fff !important;
 }
@@ -8,12 +17,12 @@ a {
 }
 
 h1 {
-  font-family: Staatliches !important;
+  font-family: 'Baskerville Regular' !important;
   font-size: 120px !important;
 }
 
 #category {
-  font-family: Staatliches !important;
+  font-family: 'Baskerville Regular' !important;
   font-weight: 500 !important;
 }
 
@@ -36,7 +45,7 @@ h1 {
 }
 
 .uk-navbar-container {
-  font-family: Staatliches !important;
+  font-family: 'Baskerville Regular' !important;
   background: #000;
 }
 
@@ -45,11 +54,38 @@ img:hover {
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1) !important;
 }
 
+img {
+  image-orientation: from-image;
+}
+
 .heading-link {
+  font-family: 'Baskerville Regular' !important;
   color: #fff;
 }
+
+.heading-link:hover {
+  color: #afafaf;
+}
+
 
 .submitBtn {
   font-weight: bold !important;
   color: #fff !important;
+}
+
+.mt-link {
+  color: #fff;
+}
+
+.mt-link:hover {
+  color: #afafaf;
+}
+
+.mt-body-text {
+  /* font-weight: 600 !important; */
+  font-size: 18px;
+}
+
+.mt-card {
+  background: #000 !important;
 }

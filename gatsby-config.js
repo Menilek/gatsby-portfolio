@@ -1,12 +1,20 @@
 module.exports = {
   siteMetadata: {
-    title: `Mik(eye)el`,
+    title: `MikaelTechane`,
     description: `A Multidisciplinary Creative`,
     author: `@gatsbyjs`,
     menuLinks:[
       {
-        name:'film',
-        link:'/film'
+        name:'narrative',
+        link:'/narrative'
+      },
+      {
+        name:'commercial',
+        link:'/commercial'
+      },
+      {
+        name:'documentary',
+        link:'/documentary'
       },
       {
         name:'photography',
@@ -15,10 +23,6 @@ module.exports = {
       {
         name:'about',
         link:'/about'
-      },
-      {
-        name:'contact',
-        link:'/contact'
       }
     ],
     socialLinks:[
@@ -42,7 +46,19 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+        options: {
+          stripMetadata: true,
+        },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -57,6 +73,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 }

@@ -35,10 +35,14 @@ function SEO({ description, lang, meta, title }) {
       title={title}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       link={[
-        {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css?family=Staatliches",
-        },
+        // {
+        //   rel: "stylesheet",
+        //   href: "https://fonts.googleapis.com/css?family=Staatliches",
+        // },
+        // {
+        //   rel: "stylesheet",
+        //   href: "https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"
+        // },
         {
           rel: "stylesheet",
           href:

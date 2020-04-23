@@ -13,6 +13,10 @@ const Layout = ({ children }) => {
       <SEO />
       <Nav />
         <main>{children}</main>
+      <main id="MainContent" uk-height-viewport="expand: true">
+        <a href="#" uk-icon="icon: vimeo"></a>
+        <a href="https://www.instagram.com/mikaels_album/" uk-icon="icon: instagram"></a>
+      </main>
     </>
   )
 }

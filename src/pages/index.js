@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div className="uk-section">
-        <div className="uk-container uk-container-large">
+        <div className="uk-container uk-container-large uk-cover-container">
           <Feature content={featureImg}/>
         </div>
     </div>

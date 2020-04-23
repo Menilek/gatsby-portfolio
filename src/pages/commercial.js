@@ -10,7 +10,7 @@ const allowPolicy = "accelerometer; autoplay; encrypted-media; gyroscope; pictur
 const vidWidth = "560"
 const vidHeight = "315"
 
-const Film = () => (
+const Commercial = () => (
     <Layout>
     <SEO title="Film"/>
         <div className="uk-section">
@@ -23,4 +23,4 @@ const Film = () => (
     </Layout>
 )
 
-export default Film;
+export default Commercial;

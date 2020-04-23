@@ -8,7 +8,7 @@ const Nav = () => (
         <div className="uk-navbar-left">
           <ul className="uk-navbar-nav">
             <li>
-              <Link to="/">Mik(eye)el</Link>
+              <Link to="/"><h2 className="heading-link uk-text-bold">MikaelTechane</h2></Link>
             </li>
           </ul>
         </div>
@@ -31,9 +31,9 @@ const Nav = () => (
               render={data =>
                 data.site.siteMetadata.menuLinks.map((site, i) => {
                   return (
-                    <li key={site.name} className="heading-link">
+                    <li key={site.name}>
                       <Link to={`/${site.link}`}>
-                        {site.name}
+                        <h5 className="heading-link uk-text-capitalize">{site.name}</h5>
                       </Link>
                     </li>
                   )
@@ -42,14 +42,6 @@ const Nav = () => (
             />
           </ul>
         </div>
-
-        <div className="uk-navbar-right">
-          <ul className="uk-navbar-nav uk-iconnav">
-            <li><a href="https://www.instagram.com/mikaels_album/" uk-icon="icon: instagram"></a></li>
-            <li><a href="#" uk-icon="icon: vimeo"></a></li>
-          </ul>   
-        </div>        
-
       </nav>
     </div>
   </div>

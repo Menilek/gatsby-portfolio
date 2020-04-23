@@ -3,8 +3,8 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import Feature from "../components/feature"
-import ImgCard from "../components/imgCard"
+
+import ImgPhoto from "../components/imgPhoto"
 import fasika from "../assets/Fasika.jpg"
 import carni from "../assets/carni1.jpg"
 import lights from "../assets/lights.jpg"
@@ -19,35 +19,45 @@ const Photography = () => (
     <SEO title="Photography"/>
         <div className="uk-section">
             <div className="uk-container uk-container-large">
-                <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true">
+                <div class="uk-child-width-1-2@s uk-child-width-1-3@m" uk-grid="masonry: true" uk-lightbox="animation: slide">
                     <div>
-                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" height="100px">
-                            <ImgCard content={poppy} />
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle uk-first-column mt-card">
+                            <ImgPhoto content={fasika} />
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" height="130px">
-                            <ImgCard content={shadows} />
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle mt-card">
+                            <ImgPhoto content={washing} />
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" height="150px">
-                            <ImgCard content={street} />
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle mt-card">
+                            <ImgPhoto content={street} />
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" height="150px">
-                            <ImgCard content={carni} />
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle uk-first-column mt-card">
+                            <ImgPhoto content={poppy} />
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" height="150px">
-                            <ImgCard content={lights} />
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle mt-card">
+                            <ImgPhoto content={shadows} />
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle" height="150px">
-                            <ImgCard content={fasika} />
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle mt-card">
+                            <ImgPhoto content={carni} />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle mt-card">
+                            <ImgPhoto content={Lily} />
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-flex uk-flex-center uk-flex-middle mt-card">
+                            <ImgPhoto content={lights} />
                         </div>
                     </div>
                 </div>
