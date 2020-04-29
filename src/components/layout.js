@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 // import { useStaticQuery, graphql } from "gatsby"
 
 import SEO from "./seo"
-import Nav from "./nav" 
+import NavBar from "./navBar" 
 // import Header from "./header"
 // import "./layout.css"
 
@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO />
-      <Nav />
+      <NavBar />
         <main>{children}</main>
       <main id="MainContent" uk-height-viewport="expand: true">
         <a href="#" uk-icon="icon: vimeo"></a>

@@ -67,7 +67,6 @@ img {
   color: #afafaf;
 }
 
-
 .submitBtn {
   font-weight: bold !important;
   color: #fff !important;
@@ -88,4 +87,18 @@ img {
 
 .mt-card {
   background: #000 !important;
+}
+
+.navbar-invisible{
+  display: none;
+}
+
+@media screen and (max-width: 750px){
+  #navbar-toggle{
+    display: block;
+  }
+}
+
+.nav-menu{
+  text-align: center !important;
 }

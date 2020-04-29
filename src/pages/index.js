@@ -30,7 +30,7 @@ export default () => {
                 <div className="uk-card-media-top" uk-scrollspy="cls: uk-animation-fade">
                   <Img
                     fluid={data.file.childImageSharp.fluid}
-                    alt=""
+                    alt="A dim street dotted with figures under illuminated by traffic lights"
                   />
                 </div>
               </div>
