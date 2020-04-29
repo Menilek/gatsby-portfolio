@@ -1,22 +1,43 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Feature from "../components/feature"
 
 import "../assets/main.css"
-import featureImg from "../assets/street.jpg"
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div className="uk-section">
+export default () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "street.jpg" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div className="uk-section">
         <div className="uk-container uk-container-large uk-cover-container">
-          <Feature content={featureImg}/>
+          <div className="uk-child-width-1-2" data-uk-grid>
+            <div className="uk-align-center">
+              <div className="uk-card uk-card-muted">
+                <div className="uk-card-media-top" uk-scrollspy="cls: uk-animation-fade">
+                  <Img
+                    fluid={data.file.childImageSharp.fluid}
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  </Layout>
-)
-
-export default IndexPage
+        </div>
+    </Layout>
+  )
+}
